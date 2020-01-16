@@ -1,11 +1,12 @@
-
-$('i, fas fa-bars').click(
+var hamburger = $('.header-right > a');
+var hamburger_menu = $('div.hamburger-menu');
+hamburger.click(
   function(){
-    $('div.hamburger-menu, ul, li').show(1000);
+    hamburger_menu.show(1000);
   }
 );
-$('.close, fas fa-times').click(
+$('.close').click(
   function(){
-    $('div.hamburger-menu, ul, li').hide();
+    hamburger_menu.hide(1000);
   }
 );
